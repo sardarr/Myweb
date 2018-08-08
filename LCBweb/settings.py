@@ -9,8 +9,12 @@ https://docs.djangoproject.com/en/2.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
+from nltk.tokenize import TweetTokenizer
 
 import os
+from home.beliefEng.Belief_tagger import modelLoader
+MODEL=modelLoader()
+TOKENIZER=TweetTokenizer()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,6 +30,12 @@ SECRET_KEY = '!q+5d6*yxnlrb-f5@n%9__c!gw&zf4mw9y+)drcodbq1@q@71$'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+#loading the model
+
+
+
+
 
 
 # Application definition

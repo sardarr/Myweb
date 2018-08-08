@@ -1,0 +1,13 @@
+ncb-B	pr	df
+na-B	pr	df
+rob-I	pr	df
+rob-M	pr	df
+O	O	df
+cb-I	pr	df
+rob-B	pr	df
+ncb-I	pr	df
+ncb-M	pr	df
+cb-B	pr	df
+na-M	pr	df
+na-I	pr	df
+cb-M	pr	df
