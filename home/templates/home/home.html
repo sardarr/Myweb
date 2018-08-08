@@ -9,11 +9,9 @@
          <button class="btn btn-info" type="danger">Submit</button>
     </form>
         <div>
-            {% for post in posts %}
-                <h1>{{ post.post }}</h1>
-                <h1>{{ tagged }}</h1>
-                <p>This post made by {{ post.user.get_full_name}}, on {{ post.created }}</p>
-            {% endfor %}
+            <h1>{{ posts.post }}</h1>
+            <h1>{{ tagged }}</h1>
+            <p>This post made by {{ posts.user.get_full_name}}, on {{ posts.created }}</p>
         </div>
     </div>
 {% endblock %}
