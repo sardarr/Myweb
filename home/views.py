@@ -24,7 +24,7 @@ class Homeview(TemplateView):
             tkz=settings.TOKENIZER
             text=form.cleaned_data['post']
             form=HomeForm()
-            tagged = tag(model,tkz(post))
+            tagged = tag(model,tkz.tokenize(post.post))
             args = {'form': form, 'posts': post, 'tagged': tagged}
             return render(request,self.template_name,args)
 

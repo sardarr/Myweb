@@ -8,10 +8,12 @@
         <br>
          <button class="btn btn-info" type="danger">Submit</button>
     </form>
-        <div>
-            <h1>{{ posts.post }}</h1>
-            <h1>{{ tagged }}</h1>
-            <p>This post made by {{ posts.user.get_full_name}}, on {{ posts.created }}</p>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">Your input:<br>{{ posts.post }}
+            <br><p>Posted by {{ posts.user.get_full_name}}, {{ posts.created }}</p></div>
+                <div class="panel-body">{{ tagged }}</div>
+            </div>
         </div>
-    </div>
+  </div>
 {% endblock %}
